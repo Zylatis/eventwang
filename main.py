@@ -16,7 +16,8 @@ except:
     page = wikipedia.page(pageid=pageid)
     assert page.url == f"https://en.wikipedia.org/wiki/{year}"
 
-months =  ['January', 'February', 'March', 'April', 'May', 'June', 'July','August', 'September', 'October', 'November', 'December'] 
+# Might be used later to split lines better but for now some answers may have month/days, some might not
+# months =  ['January', 'February', 'March', 'April', 'May', 'June', 'July','August', 'September', 'October', 'November', 'December'] 
 content = page.content.split("\n")
 allow = False
 events = []
